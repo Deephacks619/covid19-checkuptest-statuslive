@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COVID-19 STATUS&CHECKUP</title>
+	<link rel="stylesheet" type="text/css" href="data.css">
+</head>
+<body>
+	<div id="main">
+		<div id="header">
+			<h1>COVID-19 STATUS</h1>
+		</div>
+		<div id="content" class="cont">
+            <div id="headings">
+                <h2>COVID-19 CORONAVIRUS PANDEMIC</h2>
+                <p>Last updated: <span id="dateupdate"></span></p>
+            </div>
+            <div id="numbers">
+                <div id="box">
+                    <p id="names">TOTAL CASES</p>
+                    <h1 id="numberdata"><span id="totalcases1"></span></h1>
+                    <p><a href="#cases" style="color: aqua;">view by country</a></p>
+                </div>
+                <div id="box">
+                    <p id="names">TOTAL DEATHS</p>
+                    <h1 id="numberdata"><span id="totalcases2"></span></h1>
+                </div>
+                <div id="box">
+                    <p id="names">TOTAL RECOVERED</p>
+                    <h1 id="numberdata"><span id="totalcases3"></span></h1>
+                </div>
+            </div>
+            <div id="info">
+                <h3 style="font-family:Franklin Gothic Medium;letter-spacing: 3px;">Useful Info:</h3>
+                <div id="kfc">
+                    <ul>
+                        <li><a href="symptoms.html" style="color:white;">Symptoms of Corona virus</a> </li>
+                        <li><a href="incubation.html" style="color:white;">Incubation Period</a></li>
+                        <li><a href="prevention.html" style="color:white;">Prevention Tips</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div id="raj">
+                <h2 id="cases" style="font-family: Copperplate Gothic Light;text-align: center;">Corona virus Cases Country-wise, Territory, or Conveyance</h2>
+                <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> The coronavirus COVID-19 is affecting 199 countries and territories around the world and 2 international conveyances: the Diamond Princess cruise ship harbored in Yokohama, Japan, and the Holland America's MS Zaandam cruise ship.</p>
+                <br><br><br>
+                <div id="tabledatas"></div>
+            </div>
+
+        </div>
+
+		<div id="about">
+			<p>made by @Deepak Kyatham</p>
+		</div>
+	</div>
+<script src="gettingdata.js"></script>
+</body>
+</html>

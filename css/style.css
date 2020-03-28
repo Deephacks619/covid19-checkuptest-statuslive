@@ -33,7 +33,7 @@ body{
 	background-color: #3c9294;
 	padding: 20px;
 	color: white;
-	height: 80vh;
+	height: 90vh;
 }
 #container{
 	padding: 50px;
@@ -41,6 +41,7 @@ body{
 	position: relative;
 	animation: bodies;
 	animation-duration: 4s;
+	text-align: center;
 }
 @keyframes bodies{
 	0% {right: -999px;}
@@ -147,6 +148,14 @@ body{
 	#address{
 		font-size: 22px;
 	}
+}
+#click{
+	text-decoration: none;
+	color:midnightblue;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#click:hover{
+	color: beige;
 }
 /*-------------------------------------------------------------------------------------*/
 #content1{
