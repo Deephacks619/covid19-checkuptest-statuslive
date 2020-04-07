@@ -39,27 +39,17 @@ async function getdata(){
    var ss=document.getElementById("tabledatas");
    ss.innerHTML="";
    ss.appendChild(table);
-   var totalcases=0;
-   var totaldeaths=0;
-   var totalrecover=0;
-   console.log(con[33][col[3]])
-   for(var d=1;d<con.length;d++){
-        totalcases=totalcases+con[d][col[3]]
-   }
-   for(var d=1;d<con.length;d++){
-    totaldeaths=totaldeaths+con[d][col[5]]
-    }
-
-   for(var d=1;d<con.length;d++){
-    totalrecover=totalrecover+con[d][col[7]]
-    }
-    
-   console.log(totalcases)
    var t1=document.getElementById("totalcases1");
+   const totalcases=data.Global.TotalConfirmed
    t1.textContent=totalcases;
+
    var t2=document.getElementById("totalcases2");
+   const totaldeaths=data.Global.TotalDeaths
    t2.textContent=totaldeaths;
+
    var t3=document.getElementById("totalcases3");
+   const totalrecover=data.Global.TotalRecovered
    t3.textContent=totalrecover;
+   
 }
 getdata();
